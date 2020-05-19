@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-start align-items-center">
+            <div class="col-12 p-4 my-3" align="center" >
+                <h1 class="display-4"><u>IPL Dataset Visualization</u></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="static" class="container" style="border-bottom: 5px dotted black"></div>
+
+    <div id="yearSelection" class="hide container-fluid bg-light p-4 my-3" style="border-bottom: 5px dotted black">
+        <div class="row justify-content-center align-items-center m-auto flex-column">
+            <h2><u>IPL Data Visualization Per Year</u></h2><br/>
+            <form id="fm" id="getData">
+                <div class="form-group">
+                    <input name = "ip" type="text" placeholder="Enter Year" id="input_yr">
+                </div>
+                <button type="submit" id="sub_yr">SUBMIT</button>
+            </form>
+            <h4 id = "err_msg" class="errmsg"></h4>
+        </div>
+    </div>
+
+    <div id="dynamic" class="container"></div>
+    <script src="app.js"></script>
+    
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    
+</body>
+
+</html>
